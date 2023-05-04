@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Bill please</string>
+    <string name="payment">Payment</string>
+    <string name="bamt">Bill amount:</string>
+    <string name="namt"></string>
+    <string name="pno">No. of pax:</string>
+    <string name="np"></string>
+    <string name="tsvsdis">No SVS</string>
+    <string name="tsvsen">SVS</string>
+    <string name="tgstdis"> No GST</string>
+    <string name="tgsten">GST</string>
+    <string name="dis">Discount %:</string>
+    <string name="ndis"></string>
+    <string name="pm">Payment methods:</string>
+    <string name="rc">Cash</string>
+    <string name="rp">Paynow</string>
+    <string name="rmc">MasterCard</string>
+    <string name="sb">Split bill</string>
+    <string name="tb">Total Bill:</string>
+    <string name="ep">Each pay:</string>
+    <string name="rb">Reset</string>
+
+</resources>

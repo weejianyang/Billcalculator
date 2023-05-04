@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_back"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/paymentView"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:gravity="center"
+            android:text="@string/payment"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/billView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bamt"
+            android:textColor="#000002"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/billInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="@string/namt"
+            android:hint="Enter amount"/>
+
+        <TextView
+            android:id="@+id/paxView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pno"
+            android:textColor="#050505"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/paxInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="@string/np"
+            android:hint="Enter pax number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ToggleButton
+            android:id="@+id/tbSvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FF3D00"
+            android:textOff="@string/tsvsdis"
+            android:textOn="@string/tsvsen"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/tbGst"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FF3D00"
+            android:textOff="@string/tgstdis"
+            android:textOn="@string/tgsten"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/discountView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dis"
+            android:textColor="#0C0A0A"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/discountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/ndis"
+            android:hint="Enter discount%"/>
+
+        <TextView
+            android:id="@+id/methodsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pm"
+            android:textColor="#050505"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/paymentMethods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/cashMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rc" />
+
+            <RadioButton
+                android:id="@+id/paynowMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rp" />
+
+            <RadioButton
+                android:id="@+id/mastercMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rmc" />
+
+            <TextView
+                android:id="@+id/totalBillview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tb"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/eachPayview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ep"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/splitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sb"
+                android:textColor="#FF3D00"
+                android:textColorLink="#6A1B9A" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rb"
+                android:textColor="#FF3D00" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
